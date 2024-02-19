@@ -1,0 +1,62 @@
+/* Reset */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Add your custom styles below */
+
+:root {
+    --box-shadow-effect: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Define the box shadow effect as a CSS variable */
+}
+
+.bg-turquoise {
+    background-color: #40E0D0; /* Turquoise color */
+}
+
+.btn-orange {
+    background-color: #FFA500; /* Orange color */
+    border-color: #FFA500; /* Border color */
+    box-shadow: var(--box-shadow-effect); /* Use the box shadow effect defined as a CSS variable */
+}
+
+.border-turquoise {
+    border-color: #40E0D0; /* Turquoise color */
+}
+
+.text-orange {
+    color: #FFA500; /* Orange color */ 
+}
+
+.max-width-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    box-shadow: var(--box-shadow-effect); /* Use the box shadow effect defined as a CSS variable */
+}
+
+.form-control {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
