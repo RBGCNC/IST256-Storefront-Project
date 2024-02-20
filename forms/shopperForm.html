@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
-    <div class="container bg-turquoise max-width-container rounded mt-3">
+    <div class="container bg-psu-blue max-width-container rounded mt-3">
         <h2 class="display-4 text-orange">Shopper Management</h2>
         <form id="shopperForm">
             <div class="form-group">
@@ -27,9 +27,18 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">First Name</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control firstname" id="firstname" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
+                        </span>
+                    </div>
+                </div>
+                <label for="name" class="lnlabel">Last Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control lastname" id="lastname" required>
                     <div class="input-group-append">
                         <span class="input-group-text">
                             <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->

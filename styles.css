@@ -20,16 +20,20 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    color: lightgray
 }
 
 /* Add your custom styles below */
 
 :root {
-    --box-shadow-effect: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Define the box shadow effect as a CSS variable */
+    --box-shadow-effect: 4px 4px 8px rgba(248, 247, 247, 0.1); /* Define the box shadow effect as a CSS variable */
 }
 
 .bg-turquoise {
     background-color: #40E0D0; /* Turquoise color */
+}
+.bg-psu-blue {
+    background-color: #041E42; /* PSU Blue color */
 }
 
 .btn-orange {
@@ -58,5 +62,13 @@ time, mark, audio, video {
 .form-control {
     border: 1px solid #000;
     border-radius: 5px;
+}
+
+#lastname {
+    
+}
+
+.lnlabel {
+    margin-top: 10px;
 }
 
