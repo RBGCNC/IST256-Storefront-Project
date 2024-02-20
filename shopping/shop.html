@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Shopper Management</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <link rel="stylesheet" href="custom.css"> <!-- Compiled custom.scss file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-psu-blue">
+        <!-- ... (same as before) ... -->
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Shop Our Collection</h2>
+        <form class="form-inline justify-content-center mt-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for products...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button">
+                        <i class="fas fa-search"></i> <!-- Search icon -->
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Product cards -->
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4 flex-column flex-wrap display-4">
+                <div class="card ">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Shirt</h5>
+                        <p class="card-text">$29.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Shirt</h5>
+                        <p class="card-text">$29.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
