@@ -13,74 +13,102 @@
 </head>
 <body>
     <div class="container bg-psu-blue max-width-container rounded mt-3">
-        <h2 class="display-4 text-orange">Shopper Management</h2>
+        <h2 class="display-4 text-orange text-center margintopmd">Shopper Management</h2>
         <form id="shopperForm">
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="firstname" class="label-text-color">First Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="firstname" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-check-circle text-success d-none"></i> <!-- Bootstrap green check mark icon -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="label-text-color">Last Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="lastname" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-check-circle text-success d-none"></i> <!-- Bootstrap green check mark icon -->
+                        </span>
+                    </div>
+                </div>
+            </div>            
+            <div class="form-group">
+                <label for="email" class="label-text-color">Email Address</label>
                 <div class="input-group">
                     <input type="email" class="form-control border-turquoise" id="email" required>
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
+                            <i class="fas fa-check-circle d-none text-success"></i> <!-- Green checkmark icon -->
                         </span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="name">First Name</label>
+                <label for="address1" class="label-text-color">Street Line 1</label>
                 <div class="input-group">
-                    <input type="text" class="form-control firstname" id="firstname" required>
+                    <input type="text" class="form-control border-turquoise" id="address1" required>
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
-                        </span>
-                    </div>
-                </div>
-                <label for="name" class="lnlabel">Last Name</label>
-                <div class="input-group">
-                    <input type="text" class="form-control lastname" id="lastname" required>
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
+                            <i class="fas fa-check-circle text-success d-none"></i> <!-- Green checkmark icon -->
                         </span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="phone">Contact Phone Number</label>
+                <label for="address2" class="label-text-color">Street Line 2</label>
                 <div class="input-group">
-                    <input type="tel" class="form-control border-turquoise" id="phone" required>
+                    <input type="text" class="form-control border-turquoise" id="address2">
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
+                            <i class="fas fa-check-circle d-none text-success"></i> <!-- Green checkmark icon -->
                         </span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="age">Age</label>
+                <label for="city" class="label-text-color">City</label>
                 <div class="input-group">
-                    <input type="number" class="form-control border-turquoise" id="age" required>
+                    <input type="text" class="form-control border-turquoise" id="city" required>
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
+                            <i class="fas fa-check-circle d-none text-success"></i> <!-- Green checkmark icon -->
                         </span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="address">Address</label>
+                <label for="state" class="label-text-color">State</label>
                 <div class="input-group">
-                    <textarea class="form-control border-turquoise" id="address" rows="3" required></textarea>
+                    <input type="text" class="form-control border-turquoise" id="state" required>
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            <i class="fas fa-check-circle d-none"></i> <!-- Green checkmark icon -->
+                            <i class="fas fa-check-circle d-none text-success"></i> <!-- Green checkmark icon -->
                         </span>
                     </div>
+                </div>
+            </div>            
+            <div class="form-group">
+                <label for="zip" class="label-text-color">Zip Code</label>
+                <div class="input-group">
+                    <input type="text" class="form-control border-turquoise" id="zip" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-check-circle d-none text-success"></i> <!-- Green checkmark icon -->
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group align-content-end ">
+                        <button type="submit" class="btn btn-orange mb-3 button-hover-dark margintopmd">Submit</button>
+                        </div>
                 </div>
             </div>
             
-            <button type="submit" class="btn btn-orange mb-3">Submit</button>
         </form>
     </div>
 
@@ -106,7 +134,9 @@
                 </div>
                 <!-- Modal Footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary button-hover-light" data-dismiss="modal">Close</button>
+                
+                    <button type="button" class="btn btn-secondary button-hover-light" onclick="window.location.href='shop.html'">Shop</button>
                 </div>
             </div>
         </div>

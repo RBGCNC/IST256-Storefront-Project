@@ -39,12 +39,15 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("shopperForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent default form submission
 
+        var fname = document.getElementById("firstname").value; // Corrected ID
+        var lname = document.getElementById("lastname").value; // Corrected ID
         var email = document.getElementById("email").value;
-        var name = document.getElementById("name").value;
-        var age = document.getElementById("age").value;
-        var address = document.getElementById("address").value;
+        var address1 = document.getElementById("address1").value;
+        var city = document.getElementById("city").value;
+        var state = document.getElementById("state").value;
+        var zip = document.getElementById("zip").value;
 
-        if (!email || !name || !age || !address) {
+        if (!email || !address1 || !city || !state || !zip) {
             alert("All fields are required.");
             return;
         }
@@ -54,17 +57,15 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        if (isNaN(age) || age <= 0) {
-            alert("Please enter a valid age.");
-            return;
-        }
-
         var formData = {
+            fName: fname,
+            lName: lname,
             email: email,
-            name: name,
-            phone: document.getElementById("phone").value,
-            age: age,
-            address: address
+            address1: address1,
+            address2: document.getElementById("address2").value,
+            city: city,
+            state: state,
+            zip: zip
         };
 
         displayMailingLabel(formData);
@@ -73,11 +74,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function displayMailingLabel(formData) {
         var mailingLabel = document.getElementById("mailingLabel");
         mailingLabel.innerHTML = `
-            <p><strong>Name:</strong> ${formData.name}</p>
-            <p><strong>Email:</strong> ${formData.email}</p>
-            <p><strong>Phone:</strong> ${formData.phone || "N/A"}</p>
-            <p><strong>Age:</strong> ${formData.age}</p>
-            <p><strong>Address:</strong> ${formData.address}</p>
+            <p>${formData.email}</p> <br/>
+            <p>${formData.fName} ${formData.lName}</p> <!-- Corrected keys -->
+            <p>${formData.address1} ${formData.address2 ? formData.address2 : ''}</p>
+            <p>${formData.city}</p>
+            <p>${formData.state}</p>
+            <p>${formData.zip}</p> 
         `;
 
         // Show the modal
