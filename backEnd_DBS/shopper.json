@@ -1,0 +1,36 @@
+{
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["fname", "lname", "age", "email", "street1", "street12", "city", "state", "zip"],
+      "properties": {
+        "fname": {
+          "bsonType": "string"
+        },
+        "lname": {
+          "bsonType": "string"
+        },
+        "age": {
+          "bsonType": "string"
+        },
+        "email": {
+          "bsonType": "string",
+          "unique": true
+        },
+        "street1": {
+          "bsonType": "string"
+        },
+        "street12": {
+          "bsonType": "string"
+        },
+        "city": {
+          "bsonType": "string"
+        },
+        "state": {
+          "bsonType": "string"
+        },
+        "zip": {
+          "bsonType": "int"
+        }
+      }
+    }
+  }

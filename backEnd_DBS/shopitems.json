@@ -1,0 +1,31 @@
+{
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["itemid", "category", "unitOfMeasure", "weight", "name", "description", "price"],
+      "properties": {
+        "itemid": {
+          "bsonType": "int",
+          "minimum": 1,
+          "maximum": 999999
+        },
+        "category": {
+          "bsonType": "string"
+        },
+        "unitOfMeasure": {
+          "bsonType": "string"
+        },
+        "weight": {
+          "bsonType": "double"
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "description": {
+          "bsonType": "string"
+        },
+        "price": {
+          "bsonType": "double"
+        }
+      }
+    }
+  }

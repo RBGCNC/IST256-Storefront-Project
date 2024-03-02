@@ -7,8 +7,8 @@
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../custom.css"> <!-- This is the compiled custom.scss file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css"> <!-- This is the compiled custom.scss file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
@@ -30,6 +30,16 @@
                 <label for="lastname" class="label-text-color">Last Name</label>
                 <div class="input-group">
                     <input type="text" class="form-control" id="lastname" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="fas fa-check-circle text-success d-none"></i> <!-- Bootstrap green check mark icon -->
+                        </span>
+                    </div>
+                </div>
+            </div><div class="form-group">
+                <label for="age" class="label-text-color">Age</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="age" required>
                     <div class="input-group-append">
                         <span class="input-group-text">
                             <i class="fas fa-check-circle text-success d-none"></i> <!-- Bootstrap green check mark icon -->
@@ -117,7 +127,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="../scripts.js"></script>
+    <script src="/scripts.js"></script>
     
     <!-- Modal HTML -->
     <div id="myModal" class="modal fade">

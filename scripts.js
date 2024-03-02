@@ -46,8 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var city = document.getElementById("city").value;
         var state = document.getElementById("state").value;
         var zip = document.getElementById("zip").value;
+        var age = document.getElementById("age").value;
 
-        if (!email || !address1 || !city || !state || !zip) {
+        if (!email || !address1 || !city || !state || !zip || !age) {
             alert("All fields are required.");
             return;
         }
@@ -65,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
             address2: document.getElementById("address2").value,
             city: city,
             state: state,
-            zip: zip
+            zip: zip,
+            age: age
         };
 
         displayMailingLabel(formData);
@@ -74,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function displayMailingLabel(formData) {
         var mailingLabel = document.getElementById("mailingLabel");
         mailingLabel.innerHTML = `
-            <p>${formData.email}</p> <br/>
+            <p>${formData.email} ${formData.age}</p> <br/>
             <p>${formData.fName} ${formData.lName}</p> <!-- Corrected keys -->
             <p>${formData.address1} ${formData.address2 ? formData.address2 : ''}</p>
             <p>${formData.city}</p>
